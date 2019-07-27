@@ -1,0 +1,16 @@
+name = input("Podaj swoje imie: ")
+print ("Twoje imie to " + name)
+age = int(input("Podaj swój wiek: "))
+print ("Masz " + str(age) + " lat!")
+i = int(input("Podaj ile razy chcesz wyświetlic komunikat: "))
+
+for x in range(0 , i):
+    if age < 100:
+        age_uro = 100 - age
+        rok = age_uro + 2019
+        print("Bedziesz obchodzil 100 urodziny za " + str(age_uro) + " lata a w tym czasie bedziesz żył w " + str(rok) + " roku! \n")
+        x = i-1
+    else:
+        print("Masz 100 lat!")
+
+
